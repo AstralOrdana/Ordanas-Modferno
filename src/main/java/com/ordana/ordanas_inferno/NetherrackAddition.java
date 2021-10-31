@@ -1,4 +1,4 @@
-package com.ordana.ordanas_inferno.mixin;
+package com.ordana.ordanas_inferno;
 
 import com.ordana.ordanas_inferno.registry.blocks.ModBlocks;
 import net.minecraft.block.BlockState;
@@ -9,6 +9,7 @@ import net.minecraft.util.math.BlockPos;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.Iterator;
 import java.util.Random;
@@ -16,7 +17,7 @@ import java.util.Random;
 @Mixin(NetherrackBlock.class)
 public class NetherrackAddition {
     @Inject(at = @At("TAIL"), method = "grow")
-    public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
+    public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state, CallbackInfo ci) {
         boolean bl = false;
         boolean bl2 = false;
         boolean bl3 = false;
