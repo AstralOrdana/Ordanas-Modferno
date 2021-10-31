@@ -1,0 +1,307 @@
+{
+  "itemGroup.ordanas_inferno.inferno_blocks": "Ordana's Inferno Blocks",
+  "itemGroup.ordanas_inferno.inferno_organics": "Ordana's Inferno Organics",
+  "itemGroup.ordanas_inferno.inferno_gear": "Ordana's Inferno Gear",
+  "itemGroup.ordanas_inferno.inferno_materials": "Ordana's Inferno Materials",
+
+  "language.name": "English",
+  "language.region": "United States",
+  "language.code": "en_us",
+
+  "block.ordanas_inferno.black_sand": "Black Sand",
+  "block.ordanas_inferno.basalt_gravel": "Basalt gravel",
+  "block.ordanas_inferno.pumice": "Pumice",
+  "block.ordanas_inferno.quartzite": "Quartzite",
+  "block.ordanas_inferno.scorched_soul_sand": "Scorchsand",
+  "block.ordanas_inferno.bedrrack": "Bedrrack",
+  "block.ordanas_inferno.rachite": "Rachite",
+
+  "block.ordanas_inferno.vile_nylium": "Vile Nylium",
+  "block.ordanas_inferno.limestone_nest": "Limestone Nest",
+  "block.ordanas_inferno.vile_wax_block": "Block of Vile Wax",
+  "block.ordanas_inferno.blood_block": "Block of Blood",
+  "item.ordanas_inferno.blood_bottle": "Bottle of Blood",
+  "item.ordanas_inferno.vile_wax": "Vile Wax",
+  "item.ordanas_inferno.maggot": "Maggot",
+  "item.ordanas_inferno.cooked_maggot": "Cooked Maggot",
+  "item.ordanas_inferno.maggot_eggs": "Maggot Eggs",
+  "block.ordanas_inferno.rubber_block": "Block of Rubber",
+  "item.ordanas_inferno.rubber_ball": "Rubber Ball",
+
+  "block.ordanas_inferno.limestone": "Limestone",
+  "block.ordanas_inferno.limestone_slab": "Limestone Slab",
+  "block.ordanas_inferno.limestone_stairs": "Limestone Stairs",
+  "block.ordanas_inferno.limestone_wall": "Limestone Wall",
+  "block.ordanas_inferno.polished_limestone": "Polished Limestone",
+  "block.ordanas_inferno.polished_limestone_slab": "Polished Limestone Slab",
+  "block.ordanas_inferno.polished_limestone_stairs": "Polished Limestone Stairs",
+  "block.ordanas_inferno.polished_limestone_wall": "Polished Limestone Wall",
+  "block.ordanas_inferno.polished_limestone_bricks": "Polished Limestone Bricks",
+  "block.ordanas_inferno.polished_limestone_brick_slab": "Polished Limestone Brick Slab",
+  "block.ordanas_inferno.polished_limestone_brick_stairs": "Polished Limestone Brick Stairs",
+  "block.ordanas_inferno.polished_limestone_brick_wall": "Polished Limestone Brick Wall",
+  "block.ordanas_inferno.chiseled_polished_limestone": "Chiseled Polished Limestone",
+
+  "block.ordanas_inferno.scoria": "Scoria",
+  "block.ordanas_inferno.scoria_slab": "Scoria Slab",
+  "block.ordanas_inferno.scoria_stairs": "Scoria Stairs",
+  "block.ordanas_inferno.scoria_wall": "Scoria Wall",
+  "block.ordanas_inferno.polished_scoria": "Polished Scoria",
+  "block.ordanas_inferno.polished_scoria_slab": "Polished Scoria Slab",
+  "block.ordanas_inferno.polished_scoria_stairs": "Polished Scoria Stairs",
+  "block.ordanas_inferno.polished_scoria_wall": "Polished Scoria Wall",
+  "block.ordanas_inferno.polished_scoria_bricks": "Polished Scoria Bricks",
+  "block.ordanas_inferno.polished_scoria_brick_slab": "Polished Scoria Brick Slab",
+  "block.ordanas_inferno.polished_scoria_brick_stairs": "Polished Scoria Brick Stairs",
+  "block.ordanas_inferno.polished_scoria_brick_wall": "Polished Scoria Brick Wall",
+  "block.ordanas_inferno.chiseled_polished_scoria": "Chiseled Polished Scoria",
+
+  "block.ordanas_inferno.soul_stone": "Soul Stone",
+  "block.ordanas_inferno.soul_stone_slab": "Soul Stone Slab",
+  "block.ordanas_inferno.soul_stone_stairs": "Soul Stone Stairs",
+  "block.ordanas_inferno.soul_stone_wall": "Soul Stone Wall",
+  "block.ordanas_inferno.polished_soul_stone": "Polished Soul Stone",
+  "block.ordanas_inferno.polished_soul_stone_slab": "Polished Soul Stone Slab",
+  "block.ordanas_inferno.polished_soul_stone_stairs": "Polished Soul Stone Stairs",
+  "block.ordanas_inferno.polished_soul_stone_wall": "Polished Soul Stone Wall",
+  "block.ordanas_inferno.polished_soul_stone_bricks": "Polished Soul Stone Bricks",
+  "block.ordanas_inferno.polished_soul_stone_brick_slab": "Polished Soul Stone Brick Slab",
+  "block.ordanas_inferno.polished_soul_stone_brick_stairs": "Polished Soul Stone Brick Stairs",
+  "block.ordanas_inferno.polished_soul_stone_brick_wall": "Polished Soul Stone Brick Wall",
+  "block.ordanas_inferno.chiseled_polished_soul_stone": "Chiseled Polished Soul Stone",
+
+  "block.ordanas_inferno.carnelium_ore": "Carnelium Ore",
+  "block.ordanas_inferno.basaltic_carnelium_ore": "Basaltic Carnelium Ore",
+  "block.ordanas_inferno.raw_carnelium_block": "Block of Raw Carnelium",
+  "block.ordanas_inferno.carnelium_block": "Block of Carnelium",
+  "block.ordanas_inferno.carnelium_bars": "Carnelium Bars",
+  "block.ordanas_inferno.carnelium_chain": "Carnelium Chain",
+  "block.ordanas_inferno.carnelium_door": "Carnelium Door",
+  "block.ordanas_inferno.carnelium_trapdoor": "Carnelium Trapdoor",
+  "block.ordanas_inferno.carnelium_pipe": "Carnelium Pipe",
+  "item.ordanas_inferno.raw_carnelium": "Raw Carnelium",
+  "item.ordanas_inferno.carnelium_ingot": "Carnelium Ingot",
+  "item.ordanas_inferno.carnelium_nugget": "Carnelium Nugget",
+
+  "block.ordanas_inferno.anirrum_ore": "Anirrum Ore",
+  "block.ordanas_inferno.raw_anirrum_block": "Block of Raw Anirrum",
+  "block.ordanas_inferno.anirrum_block": "Block of Anirrum",
+  "block.ordanas_inferno.anirrum_bars": "Anirrum Bars",
+  "block.ordanas_inferno.anirrum_chain": "Anirrum Chain",
+  "item.ordanas_inferno.raw_anirrum": "Raw Anirrum",
+  "item.ordanas_inferno.anirrum_ingot": "Anirrum Ingot",
+  "item.ordanas_inferno.anirrum_nugget": "Anirrum Nugget",
+  "item.ordanas_inferno.anirrum_helmet": "Anirrum Helmet",
+  "item.ordanas_inferno.anirrum_chestplate": "Anirrum Chestplate",
+  "item.ordanas_inferno.anirrum_leggings": "Anirrum Leggings",
+  "item.ordanas_inferno.anirrum_boots": "Anirrum Boots",
+  "item.ordanas_inferno.anirrum_sword": "Anirrum Sword",
+  "item.ordanas_inferno.anirrum_shovel": "Anirrum Shovel",
+  "item.ordanas_inferno.anirrum_axe": "Anirrum Axe",
+  "item.ordanas_inferno.anirrum_pickaxe": "Anirrum Pickaxe",
+  "item.ordanas_inferno.anirrum_hoe": "Anirrum Hoe",
+
+  "block.ordanas_inferno.orichalcum_ore": "Orichalcum Ore",
+  "block.ordanas_inferno.raw_orichalcum_block": "Block of Raw Orichalcum",
+  "block.ordanas_inferno.orichalcum_block": "Orichalcum of Anirrum",
+  "item.ordanas_inferno.raw_orichalcum": "Raw Orichalcum",
+  "item.ordanas_inferno.orichalcum_ingot": "Orichalcum Ingot",
+  "item.ordanas_inferno.orichalcum_helmet": "Orichalcum Helmet",
+  "item.ordanas_inferno.orichalcum_chestplate": "Orichalcum Chestplate",
+  "item.ordanas_inferno.orichalcum_leggings": "Orichalcum Leggings",
+  "item.ordanas_inferno.orichalcum_boots": "Orichalcum Boots",
+  "item.ordanas_inferno.orichalcum_sword": "Orichalcum Sword",
+  "item.ordanas_inferno.orichalcum_shovel": "Orichalcum Shovel",
+  "item.ordanas_inferno.orichalcum_axe": "Orichalcum Axe",
+  "item.ordanas_inferno.orichalcum_pickaxe": "Orichalcum Pickaxe",
+  "item.ordanas_inferno.orichalcum_hoe": "Orichalcum Hoe",
+
+  "block.ordanas_inferno.powdered_sulfur": "Powdered Sulfur",
+  "block.ordanas_inferno.sulfur_cluster_block": "Block of Sulfur Clusters",
+  "item.ordanas_inferno.sulfur_cluster": "Sulfur Cluster",
+  "item.ordanas_inferno.sulfur": "Sulfur",
+
+  "item.ordanas_inferno.wart_bundle": "Wart Bundle",
+
+  "block.ordanas_inferno.moonstone_cluster_block": "Block of Moonstone Clusters",
+  "block.ordanas_inferno.moonstone_block": "Block of Moonstone",
+  "item.ordanas_inferno.moonstone": "Moonstone",
+
+  "block.ordanas_inferno.demon_quartz_ore": "Demon Quartz Ore",
+  "item.ordanas_inferno.demon_quartz": "Demon Quartz",
+  "block.ordanas_inferno.demon_quartz_block": "Block of Demon Quartz",
+
+  "block.ordanas_inferno.ash": "Ash",
+  "block.ordanas_inferno.ash_block": "Ash Block",
+  "block.ordanas_inferno.basalt_pillar": "Basalt Pillar",
+  "item.ordanas_inferno.magmatic_rock": "Magmatic Rock",
+
+  "block.ordanas_inferno.crimson_root_bale": "Crimson Root Bale",
+  "block.ordanas_inferno.crimson_wartcap": "Crimson Wartcap",
+  "item.ordanas_inferno.crimson_yam": "Crimson Yam",
+  "item.ordanas_inferno.baked_yam": "Baked Yam",
+  "item.ordanas_inferno.vile_yam": "Vile Yam",
+
+  "block.ordanas_inferno.warped_root_bale": "Warped Root Bale",
+  "block.ordanas_inferno.warped_wartcap": "Warped Wartcap",
+  "item.ordanas_inferno.warped_parsnip": "Warped Parsnip",
+  "item.ordanas_inferno.raw_croaker": "Raw Croaker",
+  "item.ordanas_inferno.cooked_croaker": "Cooked Croaker",
+  "item.ordanas_inferno.croaker_leg": "Croaker's Leg",
+  "item.ordanas_inferno.croaker_stew": "Croaker Stew",
+
+  "block.ordanas_inferno.cindercap_fungus": "Cindercap Fungus",
+  "item.ordanas_inferno.grilled_cindercap": "Grilled Cindercap",
+  "block.ordanas_inferno.cinder_roots": "Cinder Roots",
+  "block.ordanas_inferno.cinder_root_bale": "Cinder Root Bale",
+  "block.ordanas_inferno.cinder_stem": "Cinder Bundle",
+  "block.ordanas_inferno.cinder_hyphae": "Cinder Hyphae",
+  "block.ordanas_inferno.stripped_cinder_stem": "Stripped Cinder Bundle",
+  "block.ordanas_inferno.stripped_cinder_hyphae": "Stripped Cinder Hyphae",
+  "block.ordanas_inferno.cinder_planks": "Cinder Planks",
+  "block.ordanas_inferno.cinder_slab": "Cinder Slab",
+  "block.ordanas_inferno.cinder_stairs": "Cinder Stairs",
+  "block.ordanas_inferno.cinder_fence": "Cinder Fence",
+  "block.ordanas_inferno.cinder_fence_gate": "Cinder Fence Gate",
+  "block.ordanas_inferno.cinder_button": "Cinder Button",
+  "block.ordanas_inferno.cinder_pressure_plate": "Cinder Pressure Plate",
+  "block.ordanas_inferno.cinder_sign": "Cinder Sign",
+  "block.ordanas_inferno.cinder_door": "Cinder Door",
+  "block.ordanas_inferno.cinder_trapdoor": "Cinder Trapdoor",
+  "block.ordanas_inferno.cinder_bookshelf": "Cinder Bookshelf",
+
+  "block.ordanas_inferno.umbra_nylium": "Umbra Nylium",
+  "block.ordanas_inferno.umbra_fungus": "Umbra Fungus",
+  "block.ordanas_inferno.umbra_roots": "Umbra Roots",
+  "item.ordanas_inferno.umbra_fennel": "Umbra Fennel",
+  "block.ordanas_inferno.tall_umbra_roots": "Tall Umbra Roots",
+  "block.ordanas_inferno.umbra_root_bale": "Umbra Root Bale",
+  "block.ordanas_inferno.umbrabloom": "Umbrabloom",
+  "block.ordanas_inferno.umbra_stem": "Umbra Bundle",
+  "block.ordanas_inferno.umbra_hyphae": "Umbra Hyphae",
+  "block.ordanas_inferno.stripped_umbra_stem": "Stripped Umbra Bundle",
+  "block.ordanas_inferno.stripped_umbra_hyphae": "Stripped Umbra Hyphae",
+  "block.ordanas_inferno.umbra_planks": "Umbra Planks",
+  "block.ordanas_inferno.umbra_slab": "Umbra Slab",
+  "block.ordanas_inferno.umbra_stairs": "Umbra Stairs",
+  "block.ordanas_inferno.umbra_fence": "Umbra Fence",
+  "block.ordanas_inferno.umbra_fence_gate": "Umbra Fence Gate",
+  "block.ordanas_inferno.umbra_button": "Umbra Button",
+  "block.ordanas_inferno.umbra_pressure_plate": "Umbra Pressure Plate",
+  "block.ordanas_inferno.umbra_sign": "Umbra Sign",
+  "block.ordanas_inferno.umbra_door": "Umbra Door",
+  "block.ordanas_inferno.umbra_trapdoor": "Umbra Trapdoor",
+  "block.ordanas_inferno.umbra_bookshelf": "Umbra Bookshelf",
+
+  "block.ordanas_inferno.spectre_sclerotium": "Spectre Sclerotium",
+  "block.ordanas_inferno.spectre_fungus": "Spectre Fungus",
+  "block.ordanas_inferno.spectre_fungus_stem": "Spectre Stem",
+  "block.ordanas_inferno.spectre_roots": "Spectre Roots",
+  "item.ordanas_inferno.spectre_garlic": "Spectre Garlic",
+  "block.ordanas_inferno.spectre_root_bale": "Spectre Root Bale",
+  "block.ordanas_inferno.spectre_stem": "Spectre Bundle",
+  "block.ordanas_inferno.spectre_hyphae": "Spectre Hyphae",
+  "block.ordanas_inferno.stripped_spectre_stem": "Stripped Spectre Bundle",
+  "block.ordanas_inferno.stripped_spectre_hyphae": "Stripped Spectre Hyphae",
+  "block.ordanas_inferno.spectre_planks": "Spectre Planks",
+  "block.ordanas_inferno.spectre_slab": "Spectre Slab",
+  "block.ordanas_inferno.spectre_stairs": "Spectre Stairs",
+  "block.ordanas_inferno.spectre_fence": "Spectre Fence",
+  "block.ordanas_inferno.spectre_fence_gate": "Spectre Fence Gate",
+  "block.ordanas_inferno.spectre_button": "Spectre Button",
+  "block.ordanas_inferno.spectre_pressure_plate": "Spectre Pressure Plate",
+  "block.ordanas_inferno.spectre_sign": "Spectre Sign",
+  "block.ordanas_inferno.spectre_door": "Spectre Door",
+  "block.ordanas_inferno.spectre_trapdoor": "Spectre Trapdoor",
+  "block.ordanas_inferno.spectre_bookshelf": "Spectre Bookshelf",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "item.ordanas_inferno.enchanted_moonstone_crystal": "Enchanted Moonstone Crystal",
+
+  "item.ordanas_inferno.soul_in_a_bottle": "Soul in a Bottle",
+
+  "item.ordanas_inferno.soul_heart": "Soul Heart",
+
+  "item.ordanas_inferno.fly_spawn_egg": "Fly Spawn Egg",
+  "item.ordanas_inferno.maggot_spawn_egg": "Maggot Spawn Egg",
+  "item.ordanas_inferno.flyman_spawn_egg": "Flyman Spawn Egg",
+  "item.ordanas_inferno.demon_spawn_egg": "Demon Spawn Egg",
+  "item.ordanas_inferno.bone_demon_spawn_egg": "Bone Demon Spawn Egg",
+  "item.ordanas_inferno.wandering_soul_spawn_egg": "Wandering Soul Spawn Egg",
+  "item.ordanas_inferno.shroomsteer_spawn_egg": "Shroomsteer Spawn Egg",
+  "item.ordanas_inferno.tarpan_spawn_egg": "Tarpan Spawn Egg",
+  "item.ordanas_inferno.zombified_tarpan_spawn_egg": "Zombified Tarpan Spawn Egg",
+  "item.ordanas_inferno.undead_tarpan_spawn_egg": "Undead Tarpan Spawn Egg",
+  "item.ordanas_inferno.skeleton_horse_spawn_egg": "Skeleton Horse Spawn Egg",
+  "item.ordanas_inferno.piglin_king_spawn_egg": "Piglin King Spawn Egg",
+  "item.ordanas_inferno.croaker_spawn_egg": "Croaker Spawn Egg",
+  "item.ordanas_inferno.beeper_spawn_egg": "Beeper Spawn Egg",
+
+  "entity.ordanas_inferno.piglin_king": "Piglin King",
+
+  "item.ordanas_inferno.demon_idol": "Demon Idol",
+  "item.ordanas_inferno.fertilizer": "Fertilizer",
+
+  "entity.ordanas_inferno.fly": "Fly",
+  "entity.ordanas_inferno.maggot": "Maggot",
+  "entity.ordanas_inferno.flyman": "Flyman",
+  "entity.ordanas_inferno.demon": "Demon",
+  "entity.ordanas_inferno.bone_demon": "Bone Demon",
+  "entity.ordanas_inferno.wandering_soul": "Wandering Soul",
+  "entity.ordanas_inferno.croaker": "Croaker",
+  "entity.ordanas_inferno.beeper": "Beeper",
+
+  "entity.ordanas_inferno.soul_serpent": "Soul Serpent",
+  "entity.ordanas_inferno.serpent_fireball": "Soul Serpent Fireball",
+
+  "entity.ordanas_inferno.horse_skeleton": "Skeleton Horse",
+  "entity.ordanas_inferno.horse_wither_skeleton": "Wither Skeleton Horse",
+  "entity.ordanas_inferno.horse_demon": "Demonic Horse",
+
+  "death.attack.cactus.player": "%1$s walked into a Cindercap whilst trying to escape %2$s",
+  "death.attack.sweetBerryBush": "%1$s was poked to death by a color hue bush",
+  "death.attack.sweetBerryBush.player": "%1$s was poked to death by a color hue bush whilst trying to escape %2$s",
+  "death.attack.sting": "%1$s was eaten by flies",
+  "death.attack.sting.player": "%1$s eaten by flies by %2$s",
+  "death.attack.flyIntoWall": "%1$s was squashed like a bug",
+  "death.attack.flyIntoWall.player": "%1$s got squished like a bug whilst trying to escape %2$s",
+  "death.attack.dragonBreath": "%1$s was roasted in serpent fire",
+  "death.attack.dragonBreath.player": "%1$s was roasted in serpent fire by %2$s",
+
+  "stat.ordanas_inferno.interact_with_blast_furnace": "Interactions with Soul Forge",
+  "stat.ordanas_inferno.interact_with_smoker": "Interactions with Carnelium Forge",
+  "stat.ordanas_inferno.aviate_one_cm": "Distance by Fly Wings",
+
+  "gamerule.disableElytraMovementCheck": "Disable Fly Wings movement check",
+
+  "effect.ordanas_inferno.luck": "Soul Scorched",
+  "item.ordanas_inferno.tipped_arrow.effect.luck": "according to all known laws of my code there is no way this arrow should be able to scorch",
+  "item.ordanas_inferno.potion.effect.luck": "error report to nobody",
+  "item.ordanas_inferno.splash_potion.effect.luck": "error 404 functionality not found",
+  "item.ordanas_inferno.lingering_potion.effect.luck": "lingering error"
+}

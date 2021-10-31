@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:huge_fungus",
+  "config": {
+    "hat_state": {
+      "Name": "ordanas_inferno:warped_wartcap",
+      "Properties": {
+        "warty": "true"
+      }
+    },
+    "decor_state": {
+      "Name": "minecraft:shroomlight"
+    },
+    "stem_state": {
+      "Name": "minecraft:warped_stem",
+      "Properties": {
+        "axis": "y"
+      }
+    },
+    "valid_base_block": {
+      "Name": "minecraft:warped_nylium"
+    },
+    "planted": true
+  }
+}

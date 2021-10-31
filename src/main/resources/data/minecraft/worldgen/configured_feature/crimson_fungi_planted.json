@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:huge_fungus",
+  "config": {
+    "hat_state": {
+      "Name": "ordanas_inferno:crimson_wartcap",
+      "Properties": {
+        "warty": "true"
+      }
+    },
+    "decor_state": {
+      "Name": "minecraft:shroomlight"
+    },
+    "stem_state": {
+      "Name": "minecraft:crimson_stem",
+      "Properties": {
+        "axis": "y"
+      }
+    },
+    "valid_base_block": {
+      "Name": "minecraft:crimson_nylium"
+    },
+    "planted": true
+  }
+}

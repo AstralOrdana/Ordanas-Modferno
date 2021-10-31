@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:decorated",
+    "config": {
+      "decorator": {
+        "type": "minecraft:count_multilayer",
+        "config": {
+          "count": 3
+        }
+      },
+      "feature": {
+        "type": "minecraft:random_selector",
+        "config": {
+          "features": [
+            {
+              "chance": 0.3,
+              "feature": "minecraft:warped_fungi_small"
+            },
+            {
+              "chance": 0.3,
+              "feature": "minecraft:warped_fungi_large"
+            },
+            {
+              "chance": 0.1,
+              "feature": "minecraft:rare_huge_fungus"
+            }
+          ],
+          "default": "minecraft:warped_fungi_small"
+        }
+      }
+    }
+  }
+  

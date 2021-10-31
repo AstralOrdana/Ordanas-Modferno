@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ordanas_inferno:block/cinder_root_bale_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ordanas_inferno:block/cinder_root_bale"
+    },
+    "axis=z": {
+      "model": "ordanas_inferno:block/cinder_root_bale_horizontal",
+      "x": 90
+    }
+  }
+}

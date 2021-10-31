@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ordanas_inferno:block/warped_root_bale_top",
+    "side": "ordanas_inferno:block/warped_root_bale"
+  }
+}

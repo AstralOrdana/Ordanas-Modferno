@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "ordanas_inferno:cinder_fence",
+    "ordanas_inferno:spectre_fence",
+    "ordanas_inferno:umbra_fence"
+  ]
+}

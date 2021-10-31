@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ordanas_inferno:block/limestone_slab"
+    },
+    "type=double": {
+      "model": "ordanas_inferno:block/limestone"
+    },
+    "type=top": {
+      "model": "ordanas_inferno:block/limestone_slab_top"
+    }
+  }
+}

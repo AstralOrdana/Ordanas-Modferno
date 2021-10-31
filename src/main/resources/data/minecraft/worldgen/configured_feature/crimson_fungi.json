@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:decorated",
+  "config": {
+    "decorator": {
+      "type": "minecraft:count_multilayer",
+      "config": {
+        "count": 8
+      }
+    },
+    "feature": {
+      "type": "minecraft:huge_fungus",
+      "config": {
+        "hat_state": {
+          "Name": "ordanas_inferno:crimson_wartcap",
+          "Properties": {
+            "warty": "false"
+          }
+        },
+        "decor_state": {
+          "Name": "minecraft:shroomlight"
+        },
+        "stem_state": {
+          "Name": "minecraft:crimson_stem",
+          "Properties": {
+            "axis": "y"
+          }
+        },
+        "valid_base_block": {
+          "Name": "minecraft:crimson_nylium"
+        },
+        "planted": false
+      }
+    }
+  }
+}

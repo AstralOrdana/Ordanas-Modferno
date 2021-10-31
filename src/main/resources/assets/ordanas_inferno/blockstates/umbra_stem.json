@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ordanas_inferno:block/umbra_stem_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ordanas_inferno:block/umbra_stem"
+    },
+    "axis=z": {
+      "model": "ordanas_inferno:block/umbra_stem_horizontal",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ordanas_inferno:block/basaltic_carnelium_ore_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ordanas_inferno:block/basaltic_carnelium_ore"
+    },
+    "axis=z": {
+      "model": "ordanas_inferno:block/basaltic_carnelium_ore_horizontal",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "ordanas_inferno:limestone_wall",
+    "ordanas_inferno:polished_limestone_wall",
+    "ordanas_inferno:polished_limestone_brick_wall",
+    "ordanas_inferno:scoria_wall",
+    "ordanas_inferno:polished_scoria_wall",
+    "ordanas_inferno:polished_scoria_brick_wall",
+    "ordanas_inferno:soul_stone_wall",
+    "ordanas_inferno:polished_soul_stone_wall",
+    "ordanas_inferno:polished_soul_stone_brick_wall"
+  ]
+}

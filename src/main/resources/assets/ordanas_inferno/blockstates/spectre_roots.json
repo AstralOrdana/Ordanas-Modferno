@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "ordanas_inferno:block/spectre_roots"
+    },
+    "hanging=true": {
+      "model": "ordanas_inferno:block/spectre_roots_hanging"
+    }
+  }
+}

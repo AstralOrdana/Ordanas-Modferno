@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ordanas_inferno:block/soul_stone",
+    "top": "ordanas_inferno:block/soul_stone",
+    "side": "ordanas_inferno:block/soul_stone"
+  }
+}

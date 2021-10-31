@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ordanas_inferno:block/spectre_slab"
+    },
+    "type=double": {
+      "model": "ordanas_inferno:block/spectre_planks"
+    },
+    "type=top": {
+      "model": "ordanas_inferno:block/spectre_slab_top"
+    }
+  }
+}

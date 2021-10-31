@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "ordanas_inferno:block/umbra_planks"
+  }
+}

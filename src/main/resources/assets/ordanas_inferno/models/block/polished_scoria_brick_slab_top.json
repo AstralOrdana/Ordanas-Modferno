@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "ordanas_inferno:block/polished_scoria_bricks",
+    "top": "ordanas_inferno:block/polished_scoria_bricks",
+    "side": "ordanas_inferno:block/polished_scoria_bricks"
+  }
+}

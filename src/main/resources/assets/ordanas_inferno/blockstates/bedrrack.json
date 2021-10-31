@@ -1,0 +1,78 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ordanas_inferno:block/bedrrack"
+      },
+      {
+        "model": "ordanas_inferno:block/bedrrack",
+        "x": 90
+      },
+      {
+        "model": "ordanas_inferno:block/bedrrack",
+        "x": 180
+      },
+      {
+        "model": "ordanas_inferno:block/bedrrack",
+        "x": 270
+      },
+      {
+        "model": "ordanas_inferno:block/bedrrack",
+        "y": 90
+      },
+      {
+        "model": "ordanas_inferno:block/bedrrack",
+        "y": 90,
+        "x": 90
+      },
+      {
+        "model": "ordanas_inferno:block/bedrrack",
+        "y": 90,
+        "x": 180
+      },
+      {
+        "model": "ordanas_inferno:block/bedrrack",
+        "y": 90,
+        "x": 270
+      },
+      {
+        "model": "ordanas_inferno:block/bedrrack",
+        "y": 180
+      },
+      {
+        "model": "ordanas_inferno:block/bedrrack",
+        "y": 180,
+        "x": 90
+      },
+      {
+        "model": "ordanas_inferno:block/bedrrack",
+        "y": 180,
+        "x": 180
+      },
+      {
+        "model": "ordanas_inferno:block/bedrrack",
+        "y": 180,
+        "x": 270
+      },
+      {
+        "model": "ordanas_inferno:block/bedrrack",
+        "y": 270
+      },
+      {
+        "model": "ordanas_inferno:block/bedrrack",
+        "y": 270,
+        "x": 90
+      },
+      {
+        "model": "ordanas_inferno:block/bedrrack",
+        "y": 270,
+        "x": 180
+      },
+      {
+        "model": "ordanas_inferno:block/bedrrack",
+        "y": 270,
+        "x": 270
+      }
+    ]
+  }
+}

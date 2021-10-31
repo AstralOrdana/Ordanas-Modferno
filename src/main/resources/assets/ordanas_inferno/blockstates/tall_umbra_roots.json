@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "ordanas_inferno:block/tall_umbra_roots_bottom"
+    },
+    "half=upper": {
+      "model": "ordanas_inferno:block/tall_umbra_roots_top"
+    }
+  }
+}

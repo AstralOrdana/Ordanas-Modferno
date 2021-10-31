@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.ordana.ordanas_inferno.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "SignTypeAccessor",
+    "BlockEntityTypeMixin",
+    "NetherrackAddition"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

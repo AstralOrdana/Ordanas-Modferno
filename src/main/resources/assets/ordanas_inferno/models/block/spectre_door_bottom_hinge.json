@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_rh",
+  "textures": {
+    "top": "ordanas_inferno:block/spectre_door_top",
+    "bottom": "ordanas_inferno:block/spectre_door_bottom"
+  }
+}

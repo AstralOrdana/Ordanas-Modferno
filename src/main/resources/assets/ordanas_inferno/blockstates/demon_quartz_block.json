@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ordanas_inferno:block/demon_quartz_block"
+      }
+    ]
+  }
+}

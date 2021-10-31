@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ordanas_inferno:block/warped_wartcap",
+        "weight": 1
+      },
+      {
+        "model": "ordanas_inferno:block/warped_wartcap_1",
+        "weight": 1
+      },
+      {
+        "model": "ordanas_inferno:block/warped_wartcap_2",
+        "weight": 1
+      },
+      {
+        "model": "ordanas_inferno:block/warped_wartcap_3",
+        "weight": 4
+      }
+    ]
+  }
+}

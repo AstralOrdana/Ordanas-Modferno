@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ordanas_inferno:block/polished_scoria_brick_slab"
+    },
+    "type=double": {
+      "model": "ordanas_inferno:block/polished_scoria_bricks"
+    },
+    "type=top": {
+      "model": "ordanas_inferno:block/polished_scoria_brick_slab_top"
+    }
+  }
+}

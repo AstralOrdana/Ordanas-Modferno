@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ordanas_inferno:block/spectre_hyphae",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ordanas_inferno:block/spectre_hyphae"
+    },
+    "axis=z": {
+      "model": "ordanas_inferno:block/spectre_hyphae",
+      "x": 90
+    }
+  }
+}

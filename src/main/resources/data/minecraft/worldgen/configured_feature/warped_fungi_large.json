@@ -1,0 +1,87 @@
+{
+  "type": "minecraft:decorated",
+  "config": {
+    "decorator": {
+      "type": "minecraft:count",
+      "config": {
+        "count": 2
+      }
+    },
+    "feature": {
+      "type": "minecraft:decorated",
+      "config": {
+        "decorator": {
+          "type": "minecraft:square",
+          "config": {}
+        },
+        "feature": {
+          "type": "minecraft:decorated",
+          "config": {
+            "decorator": {
+              "type": "minecraft:range",
+              "config": {
+                "height": {
+                  "type": "minecraft:uniform",
+                  "min_inclusive": {
+                    "above_bottom": 30
+                  },
+                  "max_inclusive": {
+                    "below_top": 20
+                  }
+                }
+              }
+            },
+            "feature": {
+              "type": "minecraft:decorated",
+              "config": {
+                "decorator": {
+                  "type": "minecraft:cave_surface",
+                  "config": {
+                    "surface": "floor",
+                    "floor_to_ceiling_search_range": 128,
+                    "allow_water": false
+                  }
+                },
+                "feature": {
+                  "type": "minecraft:huge_brown_mushroom",
+                  "config": {
+                    "cap_provider": {
+                      "type": "minecraft:weighted_state_provider",
+                      "entries": [
+                        {
+                          "weight": 1,
+                          "data": {
+                            "Name": "minecraft:shroomlight"
+                          }
+                        },
+                        {
+                          "weight": 20,
+                          "data": {
+                            "Name": "ordanas_inferno:warped_wartcap",
+                            "Properties": {
+                              "warty": "true"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "stem_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:warped_stem",
+                        "Properties": {
+                          "axis": "y"
+                        }
+                      }
+                    },
+                    "foliage_radius": 3
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

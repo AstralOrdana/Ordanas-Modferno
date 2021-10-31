@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ordanas_inferno:block/tall_umbra_roots_top"
+  }
+}

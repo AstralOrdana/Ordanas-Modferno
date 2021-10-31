@@ -1,0 +1,58 @@
+{
+    "type": "minecraft:decorated",
+    "config": {
+      "decorator": {
+        "type": "minecraft:count",
+        "config": {
+          "count": 2
+        }
+      },
+      "feature": {
+        "type": "minecraft:decorated",
+        "config": {
+          "decorator": {
+            "type": "minecraft:square",
+            "config": {}
+          },
+          "feature": {
+            "type": "minecraft:decorated",
+            "config": {
+              "decorator": {
+                "type": "minecraft:range",
+                "config": {
+                  "height": {
+                    "type": "minecraft:uniform",
+                    "min_inclusive": {
+                      "absolute": 5
+                    },
+                    "max_inclusive": {
+                      "absolute": 41
+                    }
+                  }
+                }
+              },
+              "feature": {
+                "type": "minecraft:ore",
+                "config": {
+                  "size": 33,
+                  "discard_chance_on_air_exposure": 0,
+                  "targets": [
+                    {
+                      "target": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:netherrack"
+                      },
+                      "state": {
+                        "Name": "ordanas_inferno:basalt_gravel"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ordanas_inferno:block/cinder_slab"
+    },
+    "type=double": {
+      "model": "ordanas_inferno:block/cinder_planks"
+    },
+    "type=top": {
+      "model": "ordanas_inferno:block/cinder_slab_top"
+    }
+  }
+}

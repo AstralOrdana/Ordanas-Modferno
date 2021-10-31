@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "ordanas_inferno",
+  "version": "${version}",
+
+  "name": "Ordana's Inferno",
+  "description": "Abandon all hope, ye who enter here.",
+  "authors": [
+    "Ordana",
+    "ElBones",
+    "Rachel",
+    "Hinge",
+    "Geegaz"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/ordanas_inferno/pack.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.ordana.ordanas_inferno.OrdanasInferno"
+    ],
+    "client": [
+      "com.ordana.ordanas_inferno.OrdanasInfernoClient"
+    ]
+  },
+  "mixins": [
+    "ordanas_inferno.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "ordanas_inferno:item/anirrum_axe"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ordanas_inferno:block/polished_soul_stone_brick_slab"
+    },
+    "type=double": {
+      "model": "ordanas_inferno:block/polished_soul_stone_bricks"
+    },
+    "type=top": {
+      "model": "ordanas_inferno:block/polished_soul_stone_brick_slab_top"
+    }
+  }
+}

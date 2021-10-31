@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "ordanas_inferno:block/vile_nylium",
+    "bottom": "minecraft:block/netherrack",
+    "side": "ordanas_inferno:block/vile_nylium_side"
+  }
+}

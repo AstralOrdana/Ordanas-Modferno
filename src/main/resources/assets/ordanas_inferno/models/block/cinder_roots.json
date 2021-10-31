@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "ordanas_inferno:block/cinder_roots"
+  }
+}

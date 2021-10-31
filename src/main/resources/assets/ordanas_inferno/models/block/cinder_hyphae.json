@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ordanas_inferno:block/cinder_hyphae",
+    "side": "ordanas_inferno:block/cinder_hyphae"
+  }
+}

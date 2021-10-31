@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "ordanas_inferno:block/stripped_spectre_stem_top",
+    "side": "ordanas_inferno:block/stripped_spectre_stem"
+  }
+}
