@@ -1,4 +1,4 @@
-package com.ordana.ordanas_inferno.mixin;
+package com.ordana.ordanas_inferno.to_be_mixins;
 
 import com.ordana.ordanas_inferno.registry.blocks.ModBlocks;
 import net.minecraft.block.BlockState;
@@ -9,13 +9,14 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 import java.util.Random;
 
+@Deprecated
 @Mixin(NetherrackBlock.class)
 public class MixinNetherrack {
 
+    @Deprecated
     @Inject(at = @At(value = "INVOKE",
             target = "Lnet/minecraft/server/world/ServerWorld;setBlockState(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;I)Z"),
             method = "Lnet/minecraft/block/NetherrackBlock;grow(Lnet/minecraft/server/world/ServerWorld;Ljava/util/Random;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;)V",

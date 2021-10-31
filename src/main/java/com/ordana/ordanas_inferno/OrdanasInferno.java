@@ -2,6 +2,7 @@ package com.ordana.ordanas_inferno;
 
 import com.ordana.ordanas_inferno.registry.blocks.ModBlocks;
 import com.ordana.ordanas_inferno.registry.blocks.ModOreFeatureConfig;
+import com.ordana.ordanas_inferno.registry.blocks.nylium_registry.CustomNyliumRegistry;
 import com.ordana.ordanas_inferno.registry.features.ModMoonstone;
 import com.ordana.ordanas_inferno.registry.items.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -84,6 +85,7 @@ public class OrdanasInferno implements ModInitializer {
     public void onInitialize() {
         ModItems.registerItems();
         ModBlocks.registerBlocks();
+        CustomNyliumRegistry.initNylium();
         FuelRegistry.INSTANCE.add(ModItems.MAGMATIC_ROCK, 1600);
 
         LOGGER.info("Hello Fabric world!");
