@@ -4,9 +4,9 @@
   "package": "com.ordana.ordanas_inferno.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "SignTypeAccessor",
     "BlockEntityTypeMixin",
-    "NetherrackAddition"
+    "NetherrackBlockMixin",
+    "SignTypeAccessor"
   ],
   "client": [
   ],
