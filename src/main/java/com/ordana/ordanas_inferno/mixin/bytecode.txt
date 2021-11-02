@@ -1,0 +1,152 @@
+  public grow(Lnet/minecraft/server/world/ServerWorld;Ljava/util/Random;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;)V
+    // parameter  world
+    // parameter  random
+    // parameter  pos
+    // parameter  state
+   L0
+    LINENUMBER 38 L0
+    ICONST_0 init bl false
+    ISTORE 5 stores the bl to bl
+   L1
+    LINENUMBER 39 L1
+    ICONST_0 init bl2 false
+    ISTORE 6 stores bl2 false
+   L2
+    LINENUMBER 40 L2
+    ALOAD 3
+    ICONST_M1
+    ICONST_M1
+    ICONST_M1
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.add (III)Lnet/minecraft/util/math/BlockPos;
+    ALOAD 3
+    ICONST_1
+    ICONST_1
+    ICONST_1
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.add (III)Lnet/minecraft/util/math/BlockPos;
+    INVOKESTATIC net/minecraft/util/math/BlockPos.iterate (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Ljava/lang/Iterable;
+    INVOKEINTERFACE java/lang/Iterable.iterator ()Ljava/util/Iterator; (itf)
+    ASTORE 7
+   L3
+   FRAME FULL [T net/minecraft/server/world/ServerWorld java/util/Random net/minecraft/util/math/BlockPos T I I java/util/Iterator] []
+    ALOAD 7
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z (itf)
+    IFEQ L4
+    ALOAD 7
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object; (itf)
+    CHECKCAST net/minecraft/util/math/BlockPos
+    ASTORE 8
+   L5
+    LINENUMBER 41 L5
+    ALOAD 1
+    ALOAD 8
+    INVOKEVIRTUAL net/minecraft/server/world/ServerWorld.getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/BlockState;
+    ASTORE 9
+   L6
+    LINENUMBER 42 L6
+    ALOAD 9
+    GETSTATIC net/minecraft/block/Blocks.WARPED_NYLIUM : Lnet/minecraft/block/Block;
+    INVOKEVIRTUAL net/minecraft/block/BlockState.isOf (Lnet/minecraft/block/Block;)Z
+    IFEQ L7
+   L8
+    LINENUMBER 43 L8
+    ICONST_1
+    ISTORE 6
+   L7
+    LINENUMBER 46 L7
+   FRAME APPEND [T net/minecraft/block/BlockState]
+    ALOAD 9
+    GETSTATIC net/minecraft/block/Blocks.CRIMSON_NYLIUM : Lnet/minecraft/block/Block;
+    INVOKEVIRTUAL net/minecraft/block/BlockState.isOf (Lnet/minecraft/block/Block;)Z
+    IFEQ L9
+   L10
+    LINENUMBER 47 L10
+    ICONST_1
+    ISTORE 5
+   L9
+    LINENUMBER 50 L9
+   FRAME CHOP 2
+    ILOAD 6
+    IFEQ L11
+    ILOAD 5
+    IFEQ L11
+   L12
+    LINENUMBER 51 L12
+    GOTO L4
+   L11
+    LINENUMBER 53 L11
+   FRAME SAME
+    GOTO L3
+
+   L4  the if
+    LINENUMBER 55 L4 ???
+   FRAME CHOP 1 ???
+    ILOAD 6 loads bl2
+    IFEQ L13
+    ILOAD 5 loads bl
+    IFEQ L13
+   L14
+    LINENUMBER 56 L14
+    ALOAD 1
+    ALOAD 3
+    ALOAD 2
+    INVOKEVIRTUAL java/util/Random.nextBoolean ()Z
+    IFEQ L15
+    GETSTATIC net/minecraft/block/Blocks.WARPED_NYLIUM : Lnet/minecraft/block/Block;
+    INVOKEVIRTUAL net/minecraft/block/Block.getDefaultState ()Lnet/minecraft/block/BlockState;
+    GOTO L16
+   L15
+   FRAME FULL [] [net/minecraft/server/world/ServerWorld net/minecraft/util/math/BlockPos]
+    GETSTATIC net/minecraft/block/Blocks.CRIMSON_NYLIUM : Lnet/minecraft/block/Block;
+    INVOKEVIRTUAL net/minecraft/block/Block.getDefaultState ()Lnet/minecraft/block/BlockState;
+   L16
+   FRAME FULL [] [net/minecraft/server/world/ServerWorld net/minecraft/util/math/BlockPos net/minecraft/block/BlockState]
+    ICONST_3
+    INVOKEVIRTUAL net/minecraft/server/world/ServerWorld.setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;I)Z
+    POP
+    GOTO L17
+   L13
+    LINENUMBER 57 L13
+   FRAME FULL [T net/minecraft/server/world/ServerWorld T net/minecraft/util/math/BlockPos T I I] []
+    ILOAD 6
+    IFEQ L18
+   L19
+    LINENUMBER 58 L19
+    ALOAD 1
+    ALOAD 3
+    GETSTATIC net/minecraft/block/Blocks.WARPED_NYLIUM : Lnet/minecraft/block/Block;
+    INVOKEVIRTUAL net/minecraft/block/Block.getDefaultState ()Lnet/minecraft/block/BlockState;
+    ICONST_3
+    INVOKEVIRTUAL net/minecraft/server/world/ServerWorld.setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;I)Z
+    POP
+    GOTO L17
+   L18
+    LINENUMBER 59 L18
+   FRAME CHOP 1
+    ILOAD 5
+    IFEQ L17
+   L20
+    LINENUMBER 60 L20
+    ALOAD 1
+    ALOAD 3
+    GETSTATIC net/minecraft/block/Blocks.CRIMSON_NYLIUM : Lnet/minecraft/block/Block;
+    INVOKEVIRTUAL net/minecraft/block/Block.getDefaultState ()Lnet/minecraft/block/BlockState;
+    ICONST_3
+    INVOKEVIRTUAL net/minecraft/server/world/ServerWorld.setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;I)Z
+    POP
+   L17
+    LINENUMBER 62 L17
+   FRAME FULL [] []
+    RETURN
+   L21
+    LOCALVARIABLE this Lnet/minecraft/block/NetherrackBlock; L0 L21 0
+    LOCALVARIABLE world Lnet/minecraft/server/world/ServerWorld; L0 L21 1
+    LOCALVARIABLE random Ljava/util/Random; L0 L21 2
+    LOCALVARIABLE pos Lnet/minecraft/util/math/BlockPos; L0 L21 3
+    LOCALVARIABLE state Lnet/minecraft/block/BlockState; L0 L21 4
+    LOCALVARIABLE bl Z L1 L21 5
+    LOCALVARIABLE bl2 Z L2 L21 6
+    LOCALVARIABLE blockPos Lnet/minecraft/util/math/BlockPos; L5 L11 8
+    LOCALVARIABLE blockState Lnet/minecraft/block/BlockState; L6 L11 9
+    MAXSTACK = 5
+    MAXLOCALS = 10
+}
