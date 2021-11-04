@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ordanas_inferno:cinder_bookshelf",
+    "ordanas_inferno:spectre_bookshelf",
+    "ordanas_inferno:umbra_bookshelf",
+    "minecraft:bookshelf"
+  ]
+}

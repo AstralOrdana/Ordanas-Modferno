@@ -1,0 +1,6 @@
+{
+  "parent": "ordanas_inferno:block/tall_cross",
+  "textures": {
+    "cross": "ordanas_inferno:block/umbra_fennels_stage6"
+  }
+}

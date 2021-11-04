@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "warty=true": [
+      {
+        "model": "ordanas_inferno:block/umbra_wartcap",
+		"weight": 1
+      },
+	  {
+        "model": "ordanas_inferno:block/umbra_wartcap_1",
+		"weight": 1
+      },
+	  {
+        "model": "ordanas_inferno:block/umbra_wartcap_2",
+		"weight": 1
+      }
+    ],
+    "warty=false": [
+      {
+        "model": "ordanas_inferno:block/umbra_wartcap_3"
+      }
+    ]
+  }
+}

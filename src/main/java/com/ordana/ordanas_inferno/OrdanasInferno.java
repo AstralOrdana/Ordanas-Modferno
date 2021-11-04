@@ -3,18 +3,23 @@ package com.ordana.ordanas_inferno;
 import com.ordana.ordanas_inferno.registry.blocks.ModBlocks;
 import com.ordana.ordanas_inferno.registry.blocks.ModOreFeatureConfig;
 import com.ordana.ordanas_inferno.registry.blocks.nylium_registry.CustomNyliumRegistry;
-import com.ordana.ordanas_inferno.registry.features.ModMoonstone;
 import com.ordana.ordanas_inferno.registry.items.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Pair;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
@@ -23,7 +28,6 @@ import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.GlowstoneBlobFeature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.heightprovider.TrapezoidHeightProvider;
 import net.minecraft.world.gen.heightprovider.UniformHeightProvider;
@@ -80,14 +84,31 @@ public class OrdanasInferno implements ModInitializer {
             .spreadHorizontally()
             .repeat(32);
 
-
-
     @Override
     public void onInitialize() {
         ModItems.registerItems();
         ModBlocks.registerBlocks();
         CustomNyliumRegistry.initNylium();
         FuelRegistry.INSTANCE.add(ModItems.MAGMATIC_ROCK, 1600);
+
+        Pair<String, Boolean>[] types = new Pair[] {
+                new Pair<>("cinder", true),
+                new Pair<>("spectre", true),
+                new Pair<>("umbra", true)
+        };
+        for (Pair<String, Boolean> type : types) {
+            Block bookshelf = new Block(AbstractBlock.Settings.copy(Blocks.BOOKSHELF));
+            Identifier id = new Identifier("ordanas_inferno", String.format("%s_bookshelf", type.getLeft()));
+            Registry.register(Registry.BLOCK, id, bookshelf);
+            Registry.register(Registry.ITEM, id, new BlockItem(bookshelf, new Item.Settings().group(OrdanasInferno.INFERNO_ORGANICS)));
+            if (type.getRight()) {
+                FuelRegistry.INSTANCE.add(bookshelf, 300);
+                FlammableBlockRegistry.getDefaultInstance().add(bookshelf, 30, 20);
+            }
+
+        }
+
+
 
         LOGGER.info("Hello Fabric world!");
 

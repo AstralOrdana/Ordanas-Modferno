@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ordanas_inferno:block/umbra_wartcap_3"
+  }
+}

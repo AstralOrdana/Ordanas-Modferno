@@ -1,0 +1,6 @@
+{
+  "parent": "ordanas_inferno:block/cross_crop",
+  "textures": {
+    "cross": "ordanas_inferno:block/crimson_yams_stage2"
+  }
+}

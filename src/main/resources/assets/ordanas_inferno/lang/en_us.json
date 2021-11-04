@@ -25,6 +25,7 @@
   "item.ordanas_inferno.maggot": "Maggot",
   "item.ordanas_inferno.cooked_maggot": "Cooked Maggot",
   "item.ordanas_inferno.maggot_eggs": "Maggot Eggs",
+
   "block.ordanas_inferno.rubber_block": "Block of Rubber",
   "item.ordanas_inferno.rubber_ball": "Rubber Ball",
 
@@ -171,6 +172,7 @@
   "block.ordanas_inferno.cinder_bookshelf": "Cinder Bookshelf",
 
   "block.ordanas_inferno.umbra_nylium": "Umbra Nylium",
+  "block.ordanas_inferno.nether_farmland": "Nether Farmland",
   "block.ordanas_inferno.umbra_fungus": "Umbra Fungus",
   "block.ordanas_inferno.umbra_roots": "Umbra Roots",
   "item.ordanas_inferno.umbra_fennel": "Umbra Fennel",
@@ -192,6 +194,7 @@
   "block.ordanas_inferno.umbra_door": "Umbra Door",
   "block.ordanas_inferno.umbra_trapdoor": "Umbra Trapdoor",
   "block.ordanas_inferno.umbra_bookshelf": "Umbra Bookshelf",
+  "block.ordanas_inferno.umbra_wartcap": "Umbra Wartcap",
 
   "block.ordanas_inferno.spectre_sclerotium": "Spectre Sclerotium",
   "block.ordanas_inferno.spectre_fungus": "Spectre Fungus",

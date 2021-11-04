@@ -7,10 +7,7 @@ import com.ordana.ordanas_inferno.registry.materials.AnirrumToolMaterial;
 import com.ordana.ordanas_inferno.registry.materials.OrichalcumArmorMaterial;
 import com.ordana.ordanas_inferno.registry.materials.OrichalcumToolMaterial;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.minecraft.block.AbstractGlassBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.GlassBlock;
-import net.minecraft.block.TintedGlassBlock;
+import net.minecraft.block.*;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -19,6 +16,13 @@ import net.minecraft.util.registry.Registry;
 public class ModItems {
 
     //items
+
+    //plants
+    public static final Item WARPED_PARSNIP = new AliasedBlockItem(ModBlocks.WARPED_PARSNIPS, (new Item.Settings()).group(OrdanasInferno.INFERNO_MATERIALS).food(FoodComponents.CARROT));
+    public static final Item CRIMSON_YAM = new AliasedBlockItem(ModBlocks.CRIMSON_YAMS, (new Item.Settings()).group(OrdanasInferno.INFERNO_MATERIALS).food(FoodComponents.POTATO));
+    public static final Item UMBRA_FENNEL = new AliasedBlockItem(ModBlocks.UMBRA_FENNELS, (new Item.Settings()).group(OrdanasInferno.INFERNO_MATERIALS).food(FoodComponents.BEETROOT));
+
+    //materials
     public static final Item RAW_CARNELIUM = new Item(new Item.Settings().group(OrdanasInferno.INFERNO_MATERIALS));
     public static final Item CARNELIUM_INGOT = new Item(new Item.Settings().group(OrdanasInferno.INFERNO_MATERIALS));
     public static final Item CARNELIUM_NUGGET = new Item(new Item.Settings().group(OrdanasInferno.INFERNO_MATERIALS));
@@ -187,6 +191,9 @@ public class ModItems {
     public static final BlockItem UMBRA_DOOR = new BlockItem(ModBlocks.UMBRA_DOOR, new Item.Settings().group(OrdanasInferno.INFERNO_ORGANICS));
     public static final BlockItem UMBRA_TRAPDOOR = new BlockItem(ModBlocks.UMBRA_TRAPDOOR, new Item.Settings().group(OrdanasInferno.INFERNO_ORGANICS));
     public static final BlockItem UMBRA_NYLIUM = new BlockItem(ModBlocks.UMBRA_NYLIUM, new Item.Settings().group(OrdanasInferno.INFERNO_ORGANICS));
+    public static final BlockItem NETHER_FARMLAND = new BlockItem(ModBlocks.NETHER_FARMLAND, new Item.Settings().group(OrdanasInferno.INFERNO_ORGANICS));
+    public static final BlockItem UMBRA_FUNGUS = new BlockItem(ModBlocks.UMBRA_FUNGUS, new Item.Settings().group(OrdanasInferno.INFERNO_ORGANICS));
+    public static final BlockItem UMBRA_WARTCAP = new BlockItem(ModBlocks.UMBRA_WARTCAP, new Item.Settings().group(OrdanasInferno.INFERNO_ORGANICS));
 
     public static final BlockItem CRIMSON_ROOT_BALE = new BlockItem(ModBlocks.CRIMSON_ROOT_BALE, new Item.Settings().group(OrdanasInferno.INFERNO_ORGANICS));
     public static final BlockItem CRIMSON_WARTCAP = new BlockItem(ModBlocks.CRIMSON_WARTCAP, new Item.Settings().group(OrdanasInferno.INFERNO_ORGANICS));
@@ -195,7 +202,8 @@ public class ModItems {
     public static final BlockItem WARPED_WARTCAP = new BlockItem(ModBlocks.WARPED_WARTCAP, new Item.Settings().group(OrdanasInferno.INFERNO_ORGANICS));
 
     public static final BlockItem VILE_NYLIUM = new BlockItem(ModBlocks.VILE_NYLIUM, new Item.Settings().group(OrdanasInferno.INFERNO_ORGANICS));
-
+    public static final BlockItem LIMESTONE_NEST = new BlockItem(ModBlocks.LIMESTONE_NEST, new Item.Settings().group(OrdanasInferno.INFERNO_ORGANICS));
+    public static final BlockItem VILE_WAX_BLOCK = new BlockItem(ModBlocks.VILE_WAX_BLOCK, new Item.Settings().group(OrdanasInferno.INFERNO_ORGANICS));
 
     public static void registerItems() {
 
@@ -334,11 +342,21 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(OrdanasInferno.MOD_ID, "umbra_door"), UMBRA_DOOR);
         Registry.register(Registry.ITEM, new Identifier(OrdanasInferno.MOD_ID, "umbra_trapdoor"), UMBRA_TRAPDOOR);
         Registry.register(Registry.ITEM, new Identifier(OrdanasInferno.MOD_ID, "umbra_nylium"), UMBRA_NYLIUM);
+        Registry.register(Registry.ITEM, new Identifier(OrdanasInferno.MOD_ID, "nether_farmland"), NETHER_FARMLAND);
         Registry.register(Registry.ITEM, new Identifier(OrdanasInferno.MOD_ID, "umbra_sign"), (new SignItem(new Item.Settings().maxCount(16).group(OrdanasInferno.INFERNO_ORGANICS), ModBlocks.UMBRA_SIGN, ModBlocks.UMBRA_WALL_SIGN)));
+        Registry.register(Registry.ITEM, new Identifier(OrdanasInferno.MOD_ID, "umbra_fungus"), UMBRA_FUNGUS);
+        Registry.register(Registry.ITEM, new Identifier(OrdanasInferno.MOD_ID, "umbra_wartcap"), UMBRA_WARTCAP);
 
         Registry.register(Registry.ITEM, new Identifier(OrdanasInferno.MOD_ID, "vile_nylium"), VILE_NYLIUM);
+        Registry.register(Registry.ITEM, new Identifier(OrdanasInferno.MOD_ID, "limestone_nest"), LIMESTONE_NEST);
+        Registry.register(Registry.ITEM, new Identifier(OrdanasInferno.MOD_ID, "vile_wax_block"), VILE_WAX_BLOCK);
 
         //items
+
+        //plants
+        Registry.register(Registry.ITEM, new Identifier(OrdanasInferno.MOD_ID, "warped_parsnip"), WARPED_PARSNIP);
+        Registry.register(Registry.ITEM, new Identifier(OrdanasInferno.MOD_ID, "crimson_yam"), CRIMSON_YAM);
+        Registry.register(Registry.ITEM, new Identifier(OrdanasInferno.MOD_ID, "umbra_fennel"), UMBRA_FENNEL);
 
         //materials
         Registry.register(Registry.ITEM, new Identifier(OrdanasInferno.MOD_ID, "raw_carnelium"), RAW_CARNELIUM);

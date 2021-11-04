@@ -6,9 +6,13 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.*;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.SignType;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.world.gen.feature.ConfiguredFeatures;
+
+import java.util.function.ToIntFunction;
 
 public class ModBlocks {
 
@@ -63,12 +67,12 @@ public class ModBlocks {
 
     //woods
     public static final HayBlock CINDER_ROOT_BALE = new HayBlock(FabricBlockSettings.of(Material.SOLID_ORGANIC).breakByTool(FabricToolTags.SHEARS).strength(0f, 0f).sounds(BlockSoundGroup.NETHER_SPROUTS));
-    public static final CinderRoots CINDER_ROOTS = new CinderRoots(CINDER_ROOT_BALE.getDefaultState(), FabricBlockSettings.of(Material.NETHER_SHOOTS).breakByTool(FabricToolTags.SHEARS).strength(0f, 0f).dynamicBounds().nonOpaque().sounds(BlockSoundGroup.ROOTS));
+    public static final CinderRoots CINDER_ROOTS = new CinderRoots(CINDER_ROOT_BALE.getDefaultState(), FabricBlockSettings.of(Material.NETHER_SHOOTS).breakByTool(FabricToolTags.SHEARS).strength(0f, 0f).dynamicBounds().nonOpaque().noCollision().sounds(BlockSoundGroup.ROOTS));
     public static final PillarBlock CINDER_STEM = new PillarBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.NETHER_STEM));
     public static final PillarBlock CINDER_HYPHAE = new PillarBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.NETHER_STEM));
     public static final PillarBlock STRIPPED_CINDER_STEM = new PillarBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.NETHER_STEM));
     public static final PillarBlock STRIPPED_CINDER_HYPHAE = new PillarBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.NETHER_STEM));
-    public static final Block CINDER_PLANKS = new ModNetherrack(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD));
+    public static final Block CINDER_PLANKS = new Block(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD));
     public static final SlabBlock CINDER_SLAB = new SlabBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD));
     public static final StairsBlock CINDER_STAIRS = new ModStairs (CINDER_PLANKS.getDefaultState(), FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD));
     public static final FenceBlock CINDER_FENCE = new FenceBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD));
@@ -77,10 +81,13 @@ public class ModBlocks {
     public static final PressurePlateBlock CINDER_PRESSURE_PLATE = new ModPressurePlate(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD));
     public static final DoorBlock CINDER_DOOR = new ModDoor(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD).nonOpaque());
     public static final TrapdoorBlock CINDER_TRAPDOOR = new ModTrapdoor(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD).nonOpaque());
-    public static final Block CINDER_BOOKSHELF = new Block(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD));
+    public static final SignType CINDER_SIGN_TYPE = SignTypeAccessor.registerNew(SignTypeAccessor.newSignType("cinder"));
+    public static final Block CINDER_SIGN = new SignBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD).noCollision(), CINDER_SIGN_TYPE);
+    public static final Block CINDER_WALL_SIGN = new WallSignBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD).noCollision().dropsLike(CINDER_SIGN), CINDER_SIGN_TYPE);
+
 
     public static final Block SPECTRE_ROOT_BALE = new HayBlock(FabricBlockSettings.of(Material.SOLID_ORGANIC).breakByTool(FabricToolTags.SHEARS).strength(0f, 0f).sounds(BlockSoundGroup.NETHER_SPROUTS));
-    public static final Block SPECTRE_ROOTS = new SpectreRoots(FabricBlockSettings.of(Material.NETHER_SHOOTS).breakByTool(FabricToolTags.SHEARS).strength(0f, 0f).dynamicBounds().nonOpaque().sounds(BlockSoundGroup.ROOTS));
+    public static final Block SPECTRE_ROOTS = new SpectreRoots(FabricBlockSettings.of(Material.NETHER_SHOOTS).breakByTool(FabricToolTags.SHEARS).strength(0f, 0f).dynamicBounds().nonOpaque().noCollision().sounds(BlockSoundGroup.ROOTS));
     public static final Block SPECTRE_STEM = new PillarBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.NETHER_STEM));
     public static final Block SPECTRE_HYPHAE = new PillarBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.NETHER_STEM));
     public static final Block STRIPPED_SPECTRE_STEM = new PillarBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.NETHER_STEM));
@@ -94,11 +101,14 @@ public class ModBlocks {
     public static final Block SPECTRE_PRESSURE_PLATE = new ModPressurePlate(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD));
     public static final Block SPECTRE_DOOR = new ModDoor(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD).nonOpaque());
     public static final Block SPECTRE_TRAPDOOR = new ModTrapdoor(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD).nonOpaque());
-    public static final Block SPECTRE_BOOKSHELF = new Block(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD));
     public static final Block SPECTRE_SCLEROTIUM = new ModNylium(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES).strength(2f, 3f).sounds(BlockSoundGroup.NYLIUM));
+    public static final SignType SPECTRE_SIGN_TYPE = SignTypeAccessor.registerNew(SignTypeAccessor.newSignType("spectre"));
+    public static final Block SPECTRE_SIGN = new SignBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD).noCollision(), SPECTRE_SIGN_TYPE);
+    public static final Block SPECTRE_WALL_SIGN = new WallSignBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD).noCollision().dropsLike(SPECTRE_SIGN), SPECTRE_SIGN_TYPE);
+
 
     public static final HayBlock UMBRA_ROOT_BALE = new HayBlock(FabricBlockSettings.of(Material.SOLID_ORGANIC).breakByTool(FabricToolTags.SHEARS).strength(0f, 0f).sounds(BlockSoundGroup.NETHER_SPROUTS));
-    public static final UmbraRoots UMBRA_ROOTS = new UmbraRoots(UMBRA_ROOT_BALE.getDefaultState(), FabricBlockSettings.of(Material.NETHER_SHOOTS).breakByTool(FabricToolTags.SHEARS).strength(0f, 0f).dynamicBounds().nonOpaque().sounds(BlockSoundGroup.ROOTS));
+    public static final UmbraRoots UMBRA_ROOTS = new UmbraRoots(UMBRA_ROOT_BALE.getDefaultState(), FabricBlockSettings.of(Material.NETHER_SHOOTS).breakByTool(FabricToolTags.SHEARS).strength(0f, 0f).dynamicBounds().nonOpaque().noCollision().sounds(BlockSoundGroup.ROOTS));
     public static final TallRootsBlock TALL_UMBRA_ROOTS = new TallRootsBlock(AbstractBlock.Settings.of(Material.REPLACEABLE_PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS));
     public static final PillarBlock UMBRA_STEM = new PillarBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.NETHER_STEM));
     public static final PillarBlock UMBRA_HYPHAE = new PillarBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.NETHER_STEM));
@@ -113,28 +123,33 @@ public class ModBlocks {
     public static final PressurePlateBlock UMBRA_PRESSURE_PLATE = new ModPressurePlate(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD));
     public static final DoorBlock UMBRA_DOOR = new ModDoor(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD).nonOpaque());
     public static final TrapdoorBlock UMBRA_TRAPDOOR = new ModTrapdoor(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD).nonOpaque());
-    public static final Block UMBRA_BOOKSHELF = new Block(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD));
-    public static final Block UMBRA_NYLIUM = new ModNylium(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES).strength(2f, 3f).sounds(BlockSoundGroup.NYLIUM));
-
-    public static final SignType CINDER_SIGN_TYPE = SignTypeAccessor.registerNew(SignTypeAccessor.newSignType("cinder"));
-    public static final Block CINDER_SIGN = new SignBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD).noCollision(), CINDER_SIGN_TYPE);
-    public static final Block CINDER_WALL_SIGN = new WallSignBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD).noCollision().dropsLike(CINDER_SIGN), CINDER_SIGN_TYPE);
-
-    public static final SignType SPECTRE_SIGN_TYPE = SignTypeAccessor.registerNew(SignTypeAccessor.newSignType("spectre"));
-    public static final Block SPECTRE_SIGN = new SignBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD).noCollision(), SPECTRE_SIGN_TYPE);
-    public static final Block SPECTRE_WALL_SIGN = new WallSignBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD).noCollision().dropsLike(SPECTRE_SIGN), SPECTRE_SIGN_TYPE);
-
+    public static final Block UMBRA_NYLIUM = new ModNylium(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES).ticksRandomly().strength(2f, 3f).sounds(BlockSoundGroup.NYLIUM));
     public static final SignType UMBRA_SIGN_TYPE = SignTypeAccessor.registerNew(SignTypeAccessor.newSignType("umbra"));
     public static final Block UMBRA_SIGN = new SignBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD).noCollision(), UMBRA_SIGN_TYPE);
     public static final Block UMBRA_WALL_SIGN = new WallSignBlock(FabricBlockSettings.of(Material.NETHER_WOOD).breakByTool(FabricToolTags.AXES).strength(2f, 3f).sounds(BlockSoundGroup.WOOD).noCollision().dropsLike(UMBRA_SIGN), UMBRA_SIGN_TYPE);
+    public static final Block UMBRA_FUNGUS = new ModFungus(AbstractBlock.Settings.of(Material.PLANT, MapColor.DARK_RED).breakInstantly().noCollision().sounds(BlockSoundGroup.FUNGUS), () -> {return ConfiguredFeatures.CRIMSON_FUNGI_PLANTED;});
+    public static final Block UMBRA_WARTCAP = new Wartcap(FabricBlockSettings.of(Material.SOLID_ORGANIC).breakByTool(FabricToolTags.HOES).luminance(wartLight(5)).strength(2f, 3f).sounds(BlockSoundGroup.WART_BLOCK));
+    public static final Block UMBRA_FENNELS = new FennelsBlock(AbstractBlock.Settings.of(Material.PLANT).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.NETHER_SPROUTS));
 
     public static final HayBlock CRIMSON_ROOT_BALE = new HayBlock(FabricBlockSettings.of(Material.SOLID_ORGANIC).breakByTool(FabricToolTags.SHEARS).strength(2f, 3f).sounds(BlockSoundGroup.NETHER_SPROUTS));
-    public static final Block CRIMSON_WARTCAP = new Wartcap(FabricBlockSettings.of(Material.SOLID_ORGANIC).breakByTool(FabricToolTags.HOES).strength(2f, 3f).sounds(BlockSoundGroup.WART_BLOCK));
+    public static final Block CRIMSON_WARTCAP = new Wartcap(FabricBlockSettings.of(Material.SOLID_ORGANIC).breakByTool(FabricToolTags.HOES).luminance(wartLight(5)).strength(2f, 3f).sounds(BlockSoundGroup.WART_BLOCK));
+    public static final Block CRIMSON_YAMS = new YamsBlock(AbstractBlock.Settings.of(Material.PLANT).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.NETHER_SPROUTS));
 
     public static final HayBlock WARPED_ROOT_BALE = new HayBlock(FabricBlockSettings.of(Material.SOLID_ORGANIC).breakByTool(FabricToolTags.SHEARS).strength(2f, 3f).sounds(BlockSoundGroup.NETHER_SPROUTS));
-    public static final Block WARPED_WARTCAP = new Wartcap(FabricBlockSettings.of(Material.SOLID_ORGANIC).breakByTool(FabricToolTags.HOES).strength(2f, 3f).sounds(BlockSoundGroup.WART_BLOCK));
+    public static final Block WARPED_WARTCAP = new Wartcap(FabricBlockSettings.of(Material.SOLID_ORGANIC).breakByTool(FabricToolTags.HOES).luminance(wartLight(5)).strength(2f, 3f).sounds(BlockSoundGroup.WART_BLOCK));
+    public static final Block WARPED_PARSNIPS = new ParsnipsBlock(AbstractBlock.Settings.of(Material.PLANT).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.NETHER_SPROUTS));
 
-    public static final Block VILE_NYLIUM = new ModNylium(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES).strength(2f, 3f).sounds(BlockSoundGroup.NYLIUM));
+    private static ToIntFunction<BlockState> wartLight(int litLevel) {
+        return (state) -> {
+            return (Boolean)state.get(Wartcap.WARTY) ? litLevel : 0;
+        };
+    }
+
+    public static final Block NETHER_FARMLAND = new NetherFarmland(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES).ticksRandomly().strength(2f, 3f).sounds(BlockSoundGroup.NYLIUM));
+
+    public static final Block VILE_NYLIUM = new ModNylium(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES).ticksRandomly().strength(2f, 3f).sounds(BlockSoundGroup.NYLIUM));
+    public static final Block LIMESTONE_NEST = new InfestedBlock(LIMESTONE, FabricBlockSettings.of(Material.ORGANIC_PRODUCT).breakByTool(FabricToolTags.PICKAXES).strength(2f, 3f).sounds(BlockSoundGroup.CALCITE));
+    public static final Block VILE_WAX_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES).strength(2f, 3f).sounds(BlockSoundGroup.HONEY));
 
     //metals
     public static final Block CARNELIUM_ORE = new Block(FabricBlockSettings.of(Material.METAL).breakByTool(FabricToolTags.PICKAXES, 1).requiresTool().strength(30f, 1200f).sounds(BlockSoundGroup.BASALT));
@@ -262,7 +277,8 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "cinder_pressure_plate"), CINDER_PRESSURE_PLATE);
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "cinder_door"), CINDER_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "cinder_trapdoor"), CINDER_TRAPDOOR);
-        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "cinder_bookshelf"), CINDER_BOOKSHELF);
+        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "cinder_sign"), CINDER_SIGN);
+        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "cinder_wall_sign"), CINDER_WALL_SIGN);
 
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "spectre_root_bale"), SPECTRE_ROOT_BALE);
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "spectre_roots"), SPECTRE_ROOTS);
@@ -279,8 +295,9 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "spectre_pressure_plate"), SPECTRE_PRESSURE_PLATE);
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "spectre_door"), SPECTRE_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "spectre_trapdoor"), SPECTRE_TRAPDOOR);
-        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "spectre_bookshelf"), SPECTRE_BOOKSHELF);
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "spectre_sclerotium"), SPECTRE_SCLEROTIUM);
+        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "spectre_sign"), SPECTRE_SIGN);
+        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "spectre_wall_sign"), SPECTRE_WALL_SIGN);
 
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "umbra_root_bale"), UMBRA_ROOT_BALE);
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "umbra_roots"), UMBRA_ROOTS);
@@ -298,22 +315,25 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "umbra_pressure_plate"), UMBRA_PRESSURE_PLATE);
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "umbra_door"), UMBRA_DOOR);
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "umbra_trapdoor"), UMBRA_TRAPDOOR);
-        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "umbra_bookshelf"), UMBRA_BOOKSHELF);
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "umbra_nylium"), UMBRA_NYLIUM);
-
-        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "vile_nylium"), VILE_NYLIUM);
-
-        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "cinder_sign"), CINDER_SIGN);
-        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "cinder_wall_sign"), CINDER_WALL_SIGN);
-        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "spectre_sign"), SPECTRE_SIGN);
-        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "spectre_wall_sign"), SPECTRE_WALL_SIGN);
+        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "nether_farmland"), NETHER_FARMLAND);
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "umbra_sign"), UMBRA_SIGN);
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "umbra_wall_sign"), UMBRA_WALL_SIGN);
+        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "umbra_fungus"), UMBRA_FUNGUS);
+        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "umbra_wartcap"), UMBRA_WARTCAP);
+        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "umbra_fennels"), UMBRA_FENNELS);
+
+        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "vile_nylium"), VILE_NYLIUM);
+        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "limestone_nest"), LIMESTONE_NEST);
+        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "vile_wax_block"), VILE_WAX_BLOCK);
 
         //fungi
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "crimson_wartcap"), CRIMSON_WARTCAP);
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "crimson_root_bale"), CRIMSON_ROOT_BALE);
+        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "crimson_yams"), CRIMSON_YAMS);
+
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "warped_wartcap"), WARPED_WARTCAP);
         Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "warped_root_bale"), WARPED_ROOT_BALE);
+        Registry.register(Registry.BLOCK, new Identifier(OrdanasInferno.MOD_ID, "warped_parsnips"), WARPED_PARSNIPS);
     }
 }

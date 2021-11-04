@@ -4,6 +4,7 @@ import com.mojang.datafixers.util.Pair;
 import com.ordana.ordanas_inferno.registry.blocks.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.ItemUsageContext;
 import org.objectweb.asm.Opcodes;
@@ -39,7 +40,9 @@ public abstract class HoeItemMixin {
     )
     // https://discord.com/channels/507304429255393322/807617700734042122/834770651432747018
     private static void coolerMap(CallbackInfo ci){
-        TILLING_ACTIONS.put(ModBlocks.VILE_NYLIUM,
-                Pair.of(HoeItem::canTillFarmland, createTillAction(ModBlocks.UMBRA_NYLIUM.getDefaultState())));
+        TILLING_ACTIONS.put(ModBlocks.UMBRA_NYLIUM, Pair.of(HoeItem::canTillFarmland, createTillAction(ModBlocks.NETHER_FARMLAND.getDefaultState())));
+        TILLING_ACTIONS.put(ModBlocks.VILE_NYLIUM, Pair.of(HoeItem::canTillFarmland, createTillAction(ModBlocks.NETHER_FARMLAND.getDefaultState())));
+        TILLING_ACTIONS.put(Blocks.CRIMSON_NYLIUM, Pair.of(HoeItem::canTillFarmland, createTillAction(ModBlocks.NETHER_FARMLAND.getDefaultState())));
+        TILLING_ACTIONS.put(Blocks.WARPED_NYLIUM, Pair.of(HoeItem::canTillFarmland, createTillAction(ModBlocks.NETHER_FARMLAND.getDefaultState())));
     }
 }

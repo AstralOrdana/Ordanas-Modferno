@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_farmland",
+  "textures": {
+    "dirt": "ordanas_inferno:block/nether_farmland",
+    "top": "ordanas_inferno:block/nether_farmland_top"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ordanas_inferno:block/vile_wax_block"
+      }
+    ]
+  }
+}

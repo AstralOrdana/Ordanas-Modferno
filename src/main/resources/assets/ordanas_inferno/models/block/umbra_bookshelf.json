@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ordanas_inferno:block/umbra_planks",
+    "side": "ordanas_inferno:block/umbra_bookshelf"
+  }
+}
